@@ -1,16 +1,48 @@
-# React + Vite
+# MarketBoost Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, high-converting digital marketing landing page built with React, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Standard Sections**: Navbar, Hero, Services, Features, Statistics, and Contact.
+- **Dynamic UI**: Fixed glassmorphism Navbar that reacts to scroll.
+- **Animations**: Smooth entrance animations and scroll-triggered counters.
+- **Form Validation**: Comprehensive client-side validation with custom error messages.
+- **Mock Data**: Quick-fill buttons to test the form with sample data.
+- **Responsive**: Fully optimized for mobile, tablet, and desktop views.
+- **Thank You Redirect**: Seamless flow from form submission to a dedicated success page.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18**
+- **Tailwind CSS v4** (Modern styling)
+- **Framer Motion** (Smooth transitions and animations)
+- **Lucide React** (Consistent iconography)
+- **React Router** (Multi-page routing)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js installed on your machine.
+
+### Installation
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Project Structure
+- `src/components`: Reusable UI sections.
+- `src/pages`: Main page components (Home, Thank You).
+- `src/index.css`: Global styles and Tailwind configuration.
+
+## Validation Rules
+- **Full Name**: Required, min 3 characters.
+- **Email**: Required, valid email format.
+- **Phone**: Required, numbers only, min 11 digits.
+- **Service/Budget**: Required selection.
+- **Project Details**: Required, min 20 characters.
